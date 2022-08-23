@@ -1,0 +1,53 @@
+Anotações do curso introdutório
+Primeiro baixar o GIT através do link https://git-scm.com/downloads
+
+Comandos para gerar token ssh no sistema operacional LINUX
+
+ssh-keygen -t ed25519 -C emailgithub
+inseir nome da chave
+gerar senha
+navegar ate o diretorio dos arquivos
+listar os itens da pasta com comando (ls)
+abrir o arquivo da chave publica com comando (cat nomechavepub)
+copiar o conteudo da chave e colar no site do github
+
+passando a chave privada para o agente(start o projeto)
+eval $(ssh-agent -s)
+
+ssh-add nomechaveprivada
+
+Comandos do GIT
+
+move todos os arquivos
+git add *
+
+criar commit (git commit)  (git commit -m "nomearquivo")
+
+configurar o git
+(git config --global user.email "email@email.com")
+
+git config --global user.name "nickname"
+
+listar configurações do github
+git config --list
+
+remover email ou usuario da configuração git
+git config --global --unset user.email "email"
+git config --global --unser user.name "nickname"
+
+mostrar o status  do arquivo
+git status
+
+criar arquivo README
+echo > README.md
+
+
+mover do repositorio local para o repositorio remoto
+git remote add origin linkgithub
+listar repositorio cadastrado (git remote -v)
+git push origin master (enviar o codigo)
+
+git pull origin master(puxa o repositorio do arquivo remote)
+
+comando para clonar repositorio privado remote para localhost
+git clone nomecaminhossh ou url
